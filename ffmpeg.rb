@@ -5,10 +5,6 @@ class Ffmpeg < Formula
   sha256 "253c37e3f1d3626a2566e496554de9a4c29050753660835909a466d66b12e2ed"
   head "https://github.com/FFmpeg/FFmpeg.git"
 
-  bottle do
-    sha256 "0568e07c668f64ffdd2d83d46037bd3f452b89d72cc192967c0c48daae472cc9" => :sierra
-  end
-
   patch do
     url "https://raw.githubusercontent.com/bwdeng/ffmpeg-rtsp-patch/ed3e411b/rtcp_time_sync.patch"
     sha256 "dcfa7cba9d0e95f32c426a3bc92e2b5e70f92b1ef1d649e961f684c7645a1f51"
